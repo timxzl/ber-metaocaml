@@ -122,7 +122,7 @@ patch:
 	cp -p patches/trx.ml $(CAMLROOT)/typing/
 	cp -p patches/trx.mli $(CAMLROOT)/typing/
 #	patch -p0 -d $(CAMLROOT) < patches/patch
-	patch -p1 -d $(CAMLROOT) < patches/patch
+	patch -R -p1 -d $(CAMLROOT) < patches/patch
 
 # Create the patch set
 makepatch:
